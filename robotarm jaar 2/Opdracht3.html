@@ -9,11 +9,18 @@
     robotArm.loadLevel("exercise 3");
 
 
-    robotArm.grab();robotArm.moveRight();robotArm.drop();
+
+            for (var r = 0; r < 4; r++) {
+                robotArm.moveLeft();
+                robotArm.grab();
+                robotArm.moveRight();
+                robotArm.drop();
+            }
+
+    /*robotArm.moveLeft();robotArm.grab();robotArm.moveRight();robotArm.drop();
     robotArm.moveLeft();robotArm.grab();robotArm.moveRight();robotArm.drop();
     robotArm.moveLeft();robotArm.grab();robotArm.moveRight();robotArm.drop();
-    robotArm.moveLeft();robotArm.grab();robotArm.moveRight();robotArm.drop();
-    robotArm.speed = 200;
+    robotArm.speed = 200;*/
     // Je eigen code plaats je hier.
 
     robotArm.run();

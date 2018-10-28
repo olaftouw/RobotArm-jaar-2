@@ -8,8 +8,24 @@
 
     robotArm.loadLevel("exercise 6");
 
+for (var i = 0; i < 7; i++) {
+    robotArm.moveRight();
 
-    robotArm.moveRight();robotArm.moveRight();robotArm.moveRight();robotArm.moveRight();robotArm.moveRight();robotArm.moveRight();robotArm.moveRight();robotArm.grab();robotArm.moveRight();robotArm.drop();
+}
+for (var i = 0; i < 8; i++) {
+    robotArm.grab();
+    robotArm.moveRight();
+    robotArm.drop();
+    robotArm.moveLeft();
+    robotArm.moveLeft();
+}
+
+
+
+
+
+    /*robotArm.grab();robotArm.moveRight();
+    robotArm.drop();
     robotArm.moveLeft();robotArm.moveLeft();robotArm.grab();robotArm.moveRight();robotArm.drop();
     robotArm.moveLeft();robotArm.moveLeft();robotArm.grab();robotArm.moveRight();robotArm.drop();
     robotArm.moveLeft();robotArm.moveLeft();robotArm.grab();robotArm.moveRight();robotArm.drop();
@@ -17,7 +33,7 @@
     robotArm.moveLeft();robotArm.moveLeft();robotArm.grab();robotArm.moveRight();robotArm.drop();
     robotArm.moveLeft();robotArm.moveLeft();robotArm.grab();robotArm.moveRight();robotArm.drop();
     robotArm.moveLeft();robotArm.moveLeft();robotArm.grab();robotArm.moveRight();robotArm.drop();
-    robotArm.speed = 9999;
+    robotArm.speed = 9999;*/
     // Je eigen code plaats je hier.
 
     robotArm.run();

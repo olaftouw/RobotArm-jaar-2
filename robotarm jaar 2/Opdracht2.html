@@ -8,11 +8,29 @@
 
     robotArm.loadLevel("exercise 2");
 
-    function countToTen() {
-        for(var i = 5; i <= 10; i++) {
-            console.log(i);
-        }
-    }
+    robotArm.grab();
+    for (var i = 0; i <9; i++) {
+    	robotArm.moveRight();
+ }
+ 	robotArm.drop();
+ 	for (var r = 0; r <2; r++) {
+ 		robotArm.moveLeft();
+ }
+ 	robotArm.grab();
+ 	 	for (var e = 0; e <2; e++) {
+ 		robotArm.moveRight();
+ }
+ 	robotArm.drop();
+ 	 	for (var t = 0; t <5; t++) {
+ 		robotArm.moveLeft();
+ }
+ 	robotArm.grab();
+ 	 	for (var y = 0; y <5; y++) {
+ 		robotArm.moveRight();
+ }
+ 	robotArm.drop();
+
+    robotArm.run();
 
 </script>
 </body>
